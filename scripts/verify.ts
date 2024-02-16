@@ -2,9 +2,10 @@ import hre from "hardhat";
 
 async function main() {
  await hre.run("verify:verify", {
-    address: "0xaA93253A7a93fA89201c06c33084313CDDdA36Dd",
+    address: "0x53C583Bf71F6Ddb8695863a945A59eBC42808576",
     constructorArguments: [
-    
+      "BlastCollection",
+      "BC",
     ],
   });
   console.log(`Token Address verified`);
@@ -16,6 +17,4 @@ main().catch((error) => {
 });
 
 
-// Proxy : 0xaA93253A7a93fA89201c06c33084313CDDdA36Dd
-// Contract : 0xaA93253A7a93fA89201c06c33084313CDDdA36Dd
-// Proxy Admin : 0xf7297B9A13984e5BEd318b82A85aFdbBe8Ec882E
+// Contract : 0x53C583Bf71F6Ddb8695863a945A59eBC42808576

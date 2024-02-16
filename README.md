@@ -11,3 +11,8 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.ts
 ```
+
+### Blast Testnet contract 
+```
+Testnet: 0x53C583Bf71F6Ddb8695863a945A59eBC42808576
+```
