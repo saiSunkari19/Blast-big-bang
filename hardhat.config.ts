@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.20",
+  solidity: "0.8.18",
   networks: {
     testnet: {
       url: process.env.BLAST_TESTNET_RPC,
@@ -12,8 +12,8 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY!],
     },
     mainnet: {
-      url: process.env.LINEA_MAINNET_RPC,
-      chainId: 59144,
+      url: process.env.BLAST_MAINNET_RPC,
+      chainId: 1234,
       accounts: [process.env.PRIVATE_KEY!],
     },
   },
